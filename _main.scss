@@ -89,7 +89,6 @@ a {
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
-    grid-column: span 2;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -103,16 +102,20 @@ a {
         border: 3px solid #44D2FF;
         transform: scale(1.03);
     }
+
+    &:nth-child(1) {
+        background-image: url(img/game1.jpg);
+    }
+
+    &:nth-child(2) {
+        background-image: url(img/game2.jpg);
+    }
+
+    &:nth-child(3) {
+        background-image: url(img/game3.jpg);
+    }
 }
 
-.product-1 {
-    background-image: url(img/game1.jpg);
-}
-
-.product-2 {
-    background-image: url(img/game2.jpg);
-}
-
-.product-3 {
-    background-image: url(img/game3.jpg);
+li {
+    grid-column: span 2;
 }
