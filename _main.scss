@@ -17,7 +17,7 @@ a {
 }
 
 .top {
-    height: 1024px;
+    max-height: 1024px;
     background-image: url(img/topfoto.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -82,26 +82,25 @@ a {
 }
 
 .product {
+    color: #FFFFFF;
+}
+
+li {
     height: 300px;
-    border-radius: 16px;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    color: #FFFFFF;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: flex-end;
     padding-left: 32px;
     padding-bottom: 32px;
+    grid-column: span 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
     transition: all 0.3s;
-
-    &:hover {
-        border: 3px solid #44D2FF;
-        transform: scale(1.03);
-    }
 
     &:nth-child(1) {
         background-image: url(img/game1.jpg);
@@ -114,8 +113,9 @@ a {
     &:nth-child(3) {
         background-image: url(img/game3.jpg);
     }
-}
 
-li {
-    grid-column: span 2;
+    &:hover {
+        border: 3px solid #44D2FF;
+        transform: scale(1.03);
+    }
 }
