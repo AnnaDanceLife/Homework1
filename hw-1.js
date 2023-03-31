@@ -3,11 +3,11 @@ alert(a);
 let b = 20;
 alert(b);
 
-let year = 'В 2007 году выпустили первый iPhone';
-alert(year);
+let firstIphoneReleaseYear = 'В 2007 году выпустили первый iPhone';
+alert(firstIphoneReleaseYear);
 
-let creator = 'Брендан Эйх - создатель языка JavaScript';
-alert(creator);
+let javaScriptCreator = 'Брендан Эйх - создатель языка JavaScript';
+alert(javaScriptCreator);
 
 let c = 10;
 let d = 2;
