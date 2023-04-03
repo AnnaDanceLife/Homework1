@@ -27,8 +27,8 @@ if (d > 100 || e > 100) {
 }
 
 
-let a = 2;
-let b = 3;
+let a = Number('2');
+let b = Number('3');
 alert(a + b);
 
 
