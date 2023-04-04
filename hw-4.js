@@ -37,7 +37,7 @@ for (let name in obj) {
 let n = 1000;
 let num = 0;
 
-for (; n / 2 >= 50; num++) {
+for (; n >= 50; num++) {
     n = n / 2;
 }
 console.log(num);
