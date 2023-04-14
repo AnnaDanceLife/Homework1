@@ -3,11 +3,11 @@
 const numbs = [1, 5, 4, 10, 0, 3];
 
 for (let element = 0; element < numbs.length; element++) {
+    console.log(numbs[element]);
+
     if (numbs[element] == 10) {
-        console.log(numbs[element]);
         break;
     }
-    console.log(numbs[element]);
 }
 
 // Задание 2
@@ -20,7 +20,7 @@ console.log(numbers.indexOf(4));
 
 const arr = [1, 3, 5, 10, 20];
 
-console.log(arr.join([' ']));
+console.log(arr.join(' '));
 
 // Задание 4
 
@@ -77,22 +77,18 @@ console.log(String(arrOfString));
 
 // Задание 9
 
-let multiArray = [[1, 2, 3,], [4, 5, 6]];
+const multiArray = [[1, 2, 3,], [4, 5, 6]];
+const flatMultiArray = multiArray.flat();
 
-multiArray = multiArray.join([',']);
-console.log(multiArray);
+console.log(flatMultiArray);
 
 // Задание 10
 
-function funcSum(...arbitArr) {
-    let sum = 0;
-    for (let item of arbitArr) {
-        sum += item;
-    }
-    return sum;
-}
+const ar = [1, 5, 2, 8, 10, 3, 7];
 
-console.log(funcSum(1, 5, 2, 8, 10, 3, 7));
+for (let a = 0; a < ar.length - 1; a++) {
+    console.log(ar[a] + ar[a + 1]);
+}
 
 // Задание 11
 
