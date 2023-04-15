@@ -114,3 +114,35 @@ const integer = [15, 48, 98, 45, 13, 2, 100];
 let negativeNum = integer.map(item => (-item));
 
 console.log(negativeNum);
+
+// Задание 14
+
+const arrRandom = [];
+
+for (let r = 0; r < 10; r++) {
+    arrRandom.push(Math.round(Math.random() * 10));
+}
+console.log(arrRandom);
+
+let arrEvenNumbers = arrRandom.filter(item => (item % 2 === 0));
+console.log(arrEvenNumbers);
+
+// Задание 15
+
+const arRandom = [];
+
+for (let b = 0; b < 6; b++) {
+    arRandom.push(Math.round(Math.random() * 10) + 1);
+}
+console.log(arRandom);
+
+function average() {
+    let sum = 0;
+    for (let item of arRandom) {
+        sum += item;
+    }
+    let averageResult = sum /6;
+    console.log(averageResult);
+
+}
+average(arRandom);
