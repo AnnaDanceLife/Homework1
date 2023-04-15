@@ -141,7 +141,7 @@ function average() {
     for (let item of arRandom) {
         sum += item;
     }
-    let averageResult = sum /6;
+    let averageResult = sum / arRandom.length;
     console.log(averageResult);
 
 }
