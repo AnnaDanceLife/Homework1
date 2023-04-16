@@ -15,3 +15,23 @@ const chooseSeason = () => {
 }
 
 console.log(chooseSeason());
+
+const rememberWord = () => {
+    let word = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
+    word = word.sort(() => Math.random() - 0.5);
+    alert(word);
+
+    let firstel = String(prompt('Чему равнялся первый элемент массива?'));
+    let lastel = String(prompt('Чему равнялся последний элемент массива?'));
+
+    if (firstel === word[0] && lastel === word[6]) {
+        return 'Поздравляем! Вы угадали оба элемента.';
+    } else if (firstel === word[0] || lastel === word[6]) {
+        return 'Вы были близки к победе!';
+    } else {
+        return 'Вы ответили неверно.';
+    }
+}
+
+console.log(rememberWord());

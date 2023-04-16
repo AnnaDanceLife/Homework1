@@ -95,7 +95,7 @@ li:hover {
   transform: scale(1.03);
 }
 
-.gameSeasons {
+.gamesSection {
   height: 800px;
   background: #000915;
   display: flex;
